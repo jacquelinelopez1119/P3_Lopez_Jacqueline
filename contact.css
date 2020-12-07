@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+	line-height: 1.4;
+	font-family:'Zilla Slab', serif;
+overflow-x: hidden;
+	
+}
+.showcase{
+		background:url( "images/backgroundbanner.png") no-repeat center center/cover;
+	    padding: 10%;
+
+}
+
+.showcase img{
+		width: 45%;
+		margin-top:-5%;
+		margin-left: 25%;
+	}
+.showcase h1{
+	font-size: 3.7rem;
+	text-align: center;
+	font-family: 'Berkshire Swash', cursive;
+	color:white;
+	padding: 7%;
+	margin-top:-9%;
+}
+.showcase p{
+	font-size: 1.7rem;
+	color:white;
+	text-align: center;
+	margin-top:-6%;
+}
+
+
+/*Menu*/
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background:rgba(185,100,179,1.00);
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(185,100,179,.20), 0 0 0 0 rgba(185,100,179,.20);
+  cursor: pointer;
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: white;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw rgba(185,100,179,1.00), 0 0 0 100vh rgba(185,100,179,.99);
+  border-radius: 0;
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+	 list-style-type: none;
+}
+
+
+ label a {
+  margin-bottom: 1em;
+  display: block;
+  color:#CCB130;
+  text-decoration: none;
+	 font-size: 3rem;
+}
+label a:hover {
+	color: white;
+}
+
+
+/*flip*/
+section{
+		background:url( "images/bwBack.png") no-repeat center center/cover;
+}
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 350px;
+ margin-left: 5%;
+ margin-right: 0;
+	margin-top:5%;
+
+}
+ .flip-card-front figcaption{
+	font-size:1.8rem;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 2px 4px 6px 0 rgba(0,0,0,0.5);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+  color: black;
+	
+}
+
+.flip-card-front img{
+	width: 90%;
+	margin-top:2%;
+}
+.flip-card-back {
+  background-color: #CCB130;
+  color: white;
+	
+	font-size: 1.8rem;
+  transform: rotateY(180deg);
+}
+.flip-card-back h4, p{
+	margin-top:5%;
+}
+	.flip-card-back h4{
+		font-weight: bold;
+		text-decoration: underline;
+		
+	}
+
+.desktop{
+	visibility: hidden;
+	margin-top: -15%;
+}
+aside{
+	background: rgba(203,173,31,0.21);
+}
+aside h4{
+	font-size: 2rem;
+	text-align: center;
+	margin: 5% 0;
+	
+}
+aside p{
+	font-size: 1.6rem;
+	text-align: center;
+}
+aside ul{
+	text-align: center;
+	padding: 5%;
+	list-style-type:none; 
+	font-size: 1.6rem;
+}
+.frame{
+	width: 90%;
+	margin: 5% 5%;
+}
+
+footer{
+	background-color:rgba(183,93,175,1.00);
+	padding: 20px;
+	margin-top: 10px;
+	color: white;
+	border-top: 7px solid #CCB130;
+}
+footer ul{
+	list-style-type:none;
+	
+}
+footer ul li{
+	display:block; 
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+
+/*@media (max-width: 1000px) and (min-width: 726px)
+phones:320-767
+tablets: 768-1023
+desktop: 1024+ */
+
+
+/* tablets*/
+@media (min-width: 768px) and (max-width:1023px){
+	
+	.showcase{
+		padding:7% 0;
+	}
+.showcase img{
+		width: 23%;
+		margin-top:2%;
+		margin-left: 36%;
+	}
+.showcase h1
+	{
+		margin-top: -5%;
+		font-size:3rem;
+	}
+	.showcase p{
+			margin-top: -5%;
+	}
+	.flip-card{
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+		margin: 3% 0;
+}
+	
+		.flip-card{
+  display: flex;
+		flex-direction: row;
+  flex-wrap: wrap;
+  margin-left:25%;
+		width: 50%;
+			
+	}
+	
+	.flip-card-back{
+		font-size: 1.6rem;
+	}
+
+	.frame{
+		margin-left: 15%;
+		width: 70%;
+	}
+}
+/*Desktop*/
+
+
+@media (min-width:1024px){
+	
+	label .menu {
+		visibility: hidden;
+	}
+.showcase{
+	margin-top:5%;
+		padding:3%;
+	}
+	.showcase img{
+		width: 15%;
+		margin-top:2%;
+		margin-left: 41.5%;
+	}
+	.showcase h1{
+		font-size: 4rem;
+		margin-top:-7%;
+		
+	}
+	.showcase p{
+		text-align: center;
+		padding: 0;
+		margin-top:-5%;
+		font-size: 1.5rem;
+	}
+
+	
+	/*flip*/
+ .flip-card{
+ float: left;
+  width: 30%;
+	 margin:2% 1%;
+	}
+		.flip-card-back{
+		font-size: 1.4rem;
+	}
+	.flip-card-back h4{
+		font-weight: bold;
+		
+	}
+	
+	aside{
+		clear: left;
+		padding:0 30%;
+	}
+	
+ 
+.desktop{
+	width:100%;
+	visibility: visible;
+	background-color:#B864B3;
+	position: fixed;
+	top: 15%;
+	left:0;
+	z-index: 1;
+	
+	}
+
+
+ .desktop ul{
+	list-style-type: none;
+	text-align: center;
+	padding:1.5%;
+	visibility: visible;
+	 margin-top: 2%; 
+   
+}
+
+ .desktop ul li{
+	display: inline;
+	color: #EFEFEF;
+	margin-top: 2%; 
+	padding: 10%;
+	font-size: 1.55rem;
+    font-family:  'Berkshire Swash', cursive;
+	letter-spacing: 3px;
+	visibility: visible;
+
+	}
+.desktop ul li a{
+	
+		list-style-type: none;
+		text-decoration: none;
+	    color: #EFEFEF;
+		transition: color 0.4s ease;
+	    transition: opacity 0.4s ease;
+	}
+
+	.desktop ul li a:hover {
+		opacity: .8;
+	color:rgba(122,34,177,.80);
+	}
+
+		
+footer{
+	clear: both;
+	    border-top: 7px solid #CCB130;
+	}
+footer ul{
+		text-align: center;
+	}
+footer ul li{
+		font-size: 1.2rem;
+		display: inline;
+		text-align: center;
+	}
+	
+	
+}
