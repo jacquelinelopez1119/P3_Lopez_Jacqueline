@@ -3,57 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+<link href="index.css" rel="stylesheet" type="text/css">
+	
 	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aladin&family=Berkshire+Swash&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
+
+
 </head>
-	
-<body id="wrapper">
-     <aside>
-	<nav>
+
+<body>
+
+<nav>
+		<label>
+<input type="checkbox">
+<span class="menu"> <span class="hamburger"></span> </span>
+<ul>
+  <li> <a href="index.html">Home</a> </li>
+  <li> <a href="about.html">About</a> </li>
+  <li> <a href="contact.html">Contact</a> </li>
+</ul>
+</label>
+</nav>
+
+<nav class="desktop">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
-	
-	</aside>
 
+<header class="showcase">
+		<article class="container showcare-inner">
+		<div class="wonka"><img src="images/wonka2.png" alt="logo" id="wonka"></div>
+		 <h1>Welcome!</h1>
+			<p> The Wonka Chocolate Factory is known as the greatest candies and chocolate in the world. "We have so much time and so little to see. Wait a minute! Strike that, reverse it." - <br>
+				<a class="name">Willy Wonka</a> </p>
+				<a href="about.html" class="btn"></a>
+			    
+				</article>
+</header>
+<main>
 	
-	<div class="menu-wrap">
-		<input type="checkbox" class="toggler">
-		<div class="hamburger"><div></div></div>
-		<div class="menu">
-			<div>
-			<div>
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
-		
-		</ul>
-		</div>
-		</div>
-		</div>
-	</div>
-	
-	<header class="showcase">
-		<div class="container showcase-inner">
-		<img src="images/wonka2.png" alt="logo">
-			<h1>Welcome!</h1>
-			<p> The Wonka Chocolate Factory is known as the greatest candies and chocolate in the world. "We have so much time and so little to see. Wait a minute! Strike that, reverse it." - <br><a class="name">Willy Wonka</a> </p>
-			<a href="about.html" class="btn">
-			</a><div class="button">Press to Enter</div>
-		</div>
-		
-	</header>
-	
-	<section>
 	<h2>Best Sellers</h2>
 	
 	<figure>
@@ -169,9 +162,10 @@
 		</div>
 		
 		</figure>
-	</section>
 	
-	<section2>
+</main>	
+
+<section>
 		
 	<img class="img_ticket" src="images/wonkaGoldenticket.jpg" alt="golden ticket">
 	
@@ -182,8 +176,18 @@
 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printerLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printerLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
 	
 	</div>
-	</section2>
-		    	<script>
+	</section>
+	
+<footer>
+	<ul>
+			<li>| 123 Candy Lane LA Chocolate 90000 |</li>
+			<li>| 555-555-5555 |</li>
+			<li>| All Rights Reserve |</li>
+		</ul>
+	</footer>	
+	
+
+			    	<script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -199,13 +203,5 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
-
-	<footer>
-	<ul>
-			<li>| 123 Candy Lane LA Chocolate 90000 |</li>
-			<li>| 555-555-5555 |</li>
-			<li>| All Rights Reserve |</li>
-		</ul>
-	</footer>
 </body>
 </html>
