@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<link href="about.css" rel="stylesheet" type="text/css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aladin&family=Berkshire+Swash&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
+
+
+</head>
+
+<body>
+
+<nav>
+<label>
+<input type="checkbox">
+<span class="menu"> <span class="hamburger"></span> </span>
+<ul>
+  <li> <a href="index.html">Home</a> </li>
+  <li> <a href="about.html">About</a> </li>
+  <li> <a href="contact.html">Contact</a> </li>
+</ul>
+</label>
+</nav>
+
+<nav class="desktop">
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			</ul>
+</nav>
+
+<header class="showcase">
+	<img src="images/wonka2.png" alt="logo">
+	<h1>About Us</h1>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+	
+	
+</header>
+
+<main>
+	<h2 class="video_font">WonkaVision</h2>
+	<img src="images/antenna.png" alt="antenna" class="antenna">
+	<video autoplay muted loop id="myVideo">
+  <source src="20201125210925731.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h3>The Making of Wonka Chocolate</h3>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+	
+</main>
+	
+<section class="main">
+
+	<h2>Pure Imagination</h2>
+
+
+	<div>
+		 <div class="thumbnail">
+	       <img src="images/factory.png" alt="factory" class="cards">
+			 <figcaption>The Chocolate Room</figcaption></div>
+		
+		<img src="images/lyrics.png" alt="golden ticket" id="side">
+	</div>
+	
+	<div>	
+		<button class="accordion">Read More</button>
+	<div class="panel">
+		<div>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem  Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer t Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer t Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p></div>
+				 
+		<div class="quote">
+				 <p>"Invention, my dear friends is 93% verspiration, 6% electricity, 4% evaporation, and 2% butterscotch ripple." -Willy Wonka"</p></div>
+	</div>
+		</div>
+	
+	</section>
+
+	<article>
+	
+		<h2>Team Memmbers</h2>
+		
+		   <div class="thumbnail">
+	   <img src="images/loompa.jpg"  alt="oompa loompa" class="cards">
+	   <figcaption>Oompa Loompa</figcaption>
+			   <img src="images/oompasong.png" alt="lyrics" id="side2">			
+	       </div>
+		<button class="accordion">Read More</button>
+			  <div class="panel">
+	<p>The Oompa-Loompas are the workers at Willy Wonka's Chocolate Factory, who were imported by Willy Wonka direct from Loompaland. </p>
+	<p>When Mr. Wonka went to Loompaland and saw the terrible conditions in which the Oompa Loompas were living, he invited them to come and work at his factory to get away from the terrible country they inhabited and the creatures that preyed on them: namely, the Whangdoodles, the Hornswogglers and the Snozzwangers. </p>
+		
+
+		  <div class="thumbnail">
+	   <img src="willy.webp" alt="oompa loompa" id="group" class="cards" width="300" height="320">
+	   <figcaption>Willy Wonka</figcaption>
+			
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer t</p>
+		</div></div>
+		
+	
+	</article>	
+	
+	    	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<footer>
+	<ul>
+			<li>| 123 Candy Lane LA Chocolate 90000 |</li>
+			<li>| 555-555-5555 |</li>
+			<li>| All Rights Reserve |</li>
+		</ul>
+	</footer>	
+	
+
+
+</body>
+</html>
+
