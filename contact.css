@@ -206,7 +206,8 @@ section{
 	margin-top: -15%;
 }
 aside{
-	background: rgba(203,173,31,0.21);
+background: rgb(236,228,219);
+background: radial-gradient(circle, rgba(236,228,219,0.7067386956862461) 5%, rgba(204,177,48,0.4814300537109375) 100%);
 }
 aside h4{
 	font-size: 2rem;
